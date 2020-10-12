@@ -1,0 +1,381 @@
+/*---------------- General ----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.font-alegreya {
+  font-family: 'Alegreya', sans-serif;
+}
+
+.font-alegreya-sans {
+  font-family: 'Alegreya-Sans', 'Alegreya', sans-serif;
+}
+
+.m-heading {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 32px;
+  color: #303030;
+}
+
+.paragraph {
+  font-family: 'Alegreya-Sans', 'Alegreya', sans-serif;
+  font-size: 17px;
+  color: #686868;
+  line-height: 32px;
+}
+
+/*---------------- Header ----------------*/
+header {
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), 
+              url(./img/drew-coffman-1872.jpg) no-repeat center center/100%;
+  height: 133vh;
+  color: #ffffff;
+}
+
+
+/*---------------- Navbar ----------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5rem;
+  position: sticky;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.7rem;
+  font-size: larger;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+  color: #8E7754;
+}
+
+nav img {
+  width: 16%;
+}
+
+
+/*------------ Header section ----------------*/
+header section {
+  margin-top: 160px;
+  text-align: center;
+}
+
+header p {
+  font-size: 24px;
+  margin-bottom: 5px;
+  line-height: 45px;
+}
+
+header h7 {
+  font-size: 76px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+header a {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 30px 5px;
+  padding: 15px 20px;
+  transition: all 0.2s ease-in-out;
+}
+.active {
+  border: 2px solid #8E7754;
+  background-color: #8E7754;
+  color: #fff;
+}
+header a:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
+
+
+/*------------ who & location section ----------------*/
+.who,
+.location {
+  padding: 5rem;
+  display: flex;
+}
+
+.who img,
+.location img {
+  width: 500px;
+}
+
+.who .m-heading,
+.location .m-heading {
+  padding-bottom: 20px;
+}
+
+.who .paragraph,
+.location .paragraph {
+  padding-bottom: 10px;
+}
+
+/*------------ who section ----------------*/
+
+.who div {
+  padding: 20px 15px 0 50px;
+}
+
+.who .paragraph i {
+  color: #8E7754;
+  border: .5px solid #DCDCDC;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/*------------ location section ----------------*/
+.location {
+  background-color: #F8F8F8;
+}
+
+.location .m-heading {
+  padding-top: 50px;
+}
+
+.location div {
+  margin-right: 65px;
+}
+
+
+/*------------ baking section ----------------*/
+.bakings {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.bakings .m-heading {
+  margin-bottom: 20px;
+}
+
+.bakings .paragraph {
+  padding-bottom: 70px;
+}
+
+.bakings .bread-title {
+  font-size: 22px;
+}
+
+.bakings img {
+  width: 350px;
+}
+
+.bakings .breads {
+  display: flex;
+  justify-content: center;
+}
+
+.bakings .breads .bread {
+  text-align: center;
+  padding: 14px;
+}
+
+.bakings .breads .bread .bread-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+/*------------ contact section ----------------*/
+.contact {
+  display: flex;
+  background-color: #F8F8F8;
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-bottom: 80px;
+}
+
+.contact #map {
+  height: 500px;
+  width: 500px;
+}
+
+.contact .m-heading {
+  padding-bottom: 25px;
+}
+
+.contact .paragraph.main {
+  padding: 0 80px 35px 0;
+}
+
+.contact .paragraph.sub {
+  padding-bottom: 25px;
+}
+
+.contact i {
+  background-color: #8E7754;
+  color: #fff;
+  border: 1px solid #8E7754;
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+
+/*------------ About section ----------------*/
+.about {
+  background-color: #403D38;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.about .start-paragraph {
+  color: #969696;
+  padding: 50px 30px 50px 30px;
+}
+
+.about .part {
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+.about .paragraph {
+  color: #969696;
+  font-size: 15px;
+}
+
+.about .end-paragraph {
+  position: relative;
+  z-index: 2;
+  color: #969696;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.about .end-paragraph::before {
+  content: ' ';
+  background: url(./img/contact-details-map.png) no-repeat center;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.about .about-title {
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.about li {
+  color: #969696;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
+.about li:last-child {
+  border: none;
+}
+
+.about li:first-child {
+  padding-top: 0;
+}
+
+.about .part li::before {
+  content: "\f105";
+  font-family: FontAwesome;
+  padding-right: 8px;
+}
+
+.about a {
+  color: #969696;
+}
+
+.about .end-paragraph i {
+  padding-right: 8px;
+}
+
+
+/*------------ footer section ----------------*/
+footer {
+  background-color: #353330;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  color: #969696;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer i {
+  border: 1px solid #403D38;
+  border-radius: 50%;
+  background-color: #403D38;
+  color: #969696;
+  padding: 12px;
+  margin-right: 5px;
+}
+
+footer .fa-facebook-f {
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .fa-google-plus-g {
+  padding-left: 8px;
+  padding-right: 8px; 
+  transition: all 0.2s ease-in-out;
+}
+
+footer .fa-facebook-f:hover {
+  background-color: #3B5998;
+  color: white;
+}
+
+footer .fa-google-plus-g:hover {
+  background-color: #DD4B39;
+  color: white;
+}
+
+footer .fa-linkedin-in {
+  transition: all 0.2s ease-in-out;
+}
+
+footer .fa-twitter {
+  transition: all 0.2s ease-in-out;
+}
+
+footer .fa-linkedin-in:hover {
+  background-color: #007BB5;
+  color: #fff;
+}
+
+footer .fa-twitter:hover {
+  background-color: #00ACED;
+  color: #fff;
+}
